@@ -43,7 +43,6 @@ var Typewriter = {};
 		return function(e) {
 			var curr = e.target.selectionStart
 			if(flag && e.target.value.length > 1) {
-				console.log("hello")
 				prev = e.target.value.length - 1
 			}
 			if(prev < curr) {
