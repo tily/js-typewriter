@@ -7,8 +7,8 @@
 // @require        https://gist.github.com/894548/typewriter.js
 // ==/UserScript==
 (function() {
-	var list = document.querySelectorAll("input[type='text'], textarea")
-	for(var i = 0; i < list.length; i++) {
-		list[i].onkeyup = Typewriter.onkeyup()
+	var inputs = document.querySelectorAll("input[type='text'], textarea")
+	for(var i = 0; i < inputs.length; i++) {
+		inputs[i].onkeyup = Typewriter.onkeyup()
 	}
 )()
