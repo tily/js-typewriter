@@ -42,15 +42,16 @@ var Typewriter = {};
 		var flag = true
 		return function(e) {
 			var curr = e.target.selectionStart
-			if(flag && e.target.value != "") {
-				prev = e.target.value.length
-				flag = false
+			if(flag && e.target.value.length > 1) {
+				console.log("hello")
+				prev = e.target.value.length - 1
 			}
 			if(prev < curr) {
 				var addition = e.target.value.slice(prev, curr)
 				playText(addition)
 			}
 			prev = curr
+			flag = false
 		}
 	}
 })()
