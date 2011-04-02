@@ -3,8 +3,8 @@
 // @namespace      http://d.hatena.ne.jp/tily/
 // @include        http://*
 // @include        https://*
-// @require        https://gist.github.com/894548/sounds.js
-// @require        https://gist.github.com/894548/typewriter.js
+// @require        https://github.com/tily/js-typewriter/raw/master/sounds.js
+// @require        https://github.com/tily/js-typewriter/raw/master/typewriter.js
 // ==/UserScript==
 (function() {
 	var inputs = document.querySelectorAll("input[type='text'], textarea")
